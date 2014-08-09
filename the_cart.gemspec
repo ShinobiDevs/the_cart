@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = TheCart::VERSION
   spec.authors       = ["Elad Meidar"]
   spec.email         = ["elad@eizesus.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = "Cart implementation in Redis"
+  spec.description   = "Online cart implementation in redis"
+  spec.homepage      = "https://github.com/ShinobiDevs/the_cart"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
