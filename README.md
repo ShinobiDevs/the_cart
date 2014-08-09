@@ -77,19 +77,19 @@ The `id` attribute will automatically be cached.
 
 ### Adding an item
   
-  @user.add_item_to_cart(@product)
+    @user.add_item_to_cart(@product)
 
 ### Removing an item
 
-  @user.remove_item_from_cart(@product)
+    @user.remove_item_from_cart(@product)
 
 ## Count items in cart
   
-  @user.cart_count #=> will return the actual item count, quantity considered.
+    @user.cart_count #=> will return the actual item count, quantity considered.
 
 ### Total Cost of items in cart
 
-  @user.cart_total #= 3000.0
+    @user.cart_total #= 3000.0
 
 ## Contributing
 
