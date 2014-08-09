@@ -30,12 +30,12 @@ module TheCart
         else
           TheCart.redis.zadd self.cart_id_key, 1, item.id
         end
-        TheCart.redis.expire self.cart_id_key, self.class.cart_configuration[:expire_cart_in].to_i
+        TheCart.redis.expire self.cart_id_key, self.class.cart_configuration[:expire_cart_in].to_i * 60
       end
 
       def remove_item_from_cart(item)
         TheCart.redis.zrem self.cart_id_key, item.id
-        TheCart.redis.expire self.cart_id_key, self.class.cart_configuration[:expire_cart_in].to_i
+        TheCart.redis.expire self.cart_id_key, self.class.cart_configuration[:expire_cart_in].to_i * 60
       end
 
       def cart_count
